@@ -2,8 +2,13 @@ package exceptions;
 
 public class NombreNegatifException extends Exception {
 
-
-    public NombreNegatifException(String msg) {
+private int val;
+    public NombreNegatifException(String msg,int val) {
         super(msg);
+        this.val=val;
+    }
+
+    public int getVal() {
+        return val;
     }
 }

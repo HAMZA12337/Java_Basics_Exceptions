@@ -8,7 +8,7 @@ public class EntierNaturel {
 
     public EntierNaturel(int val) throws NombreNegatifException{
         if(val<0){
-            throw new NombreNegatifException("le nombre est negatif");
+            throw new NombreNegatifException("le nombre est negatif",this.val);
         }
         this.val=val;
     }
@@ -21,14 +21,14 @@ public class EntierNaturel {
 
     public void setVal(int val) throws NombreNegatifException{
         if(val<0){
-            throw new NombreNegatifException("le nombre est negatif");
+            throw new NombreNegatifException("le nombre est negatif",this.val);
         }
         this.val = val;
     }
 
     public void decrementer()throws NombreNegatifException{
 if(val<0){
-            throw new NombreNegatifException("le nombre est negatif");
+            throw new NombreNegatifException("le nombre est negatif",this.val);
         }
         System.out.println(val);
         val--;
